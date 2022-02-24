@@ -140,14 +140,14 @@ public class RobotContainer
     
                                 //////////////      Indexer  Controls     ///////////////////////
 
-    JoystickButton indexerI2 = new JoystickButton(gio, Constants.IndexerInGio);
-    indexerI2.whileHeld(indexerIn);
+    JoystickButton indexerInGio = new JoystickButton(gio, Constants.IndexerInGio);
+    indexerInGio.whileHeld(indexerIn);
 
-    JoystickButton indexer2 = new JoystickButton(gio, Constants.IndexerInMaxGio);
-    indexer2.whileHeld(indexerInMax);
+    JoystickButton indexerMaxGio = new JoystickButton(gio, Constants.IndexerInMaxGio);
+    indexerMaxGio.whileHeld(indexerInMax);
 
-    JoystickButton indexer2O = new JoystickButton(gio, Constants.IndexerOutGio);
-    indexer2O.whileHeld(indexerOut);
+    JoystickButton indexerOutGio = new JoystickButton(gio, Constants.IndexerOutGio);
+    indexerOutGio.whileHeld(indexerOut);
     
 
 
