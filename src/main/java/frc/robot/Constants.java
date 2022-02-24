@@ -10,7 +10,7 @@ public static int
 
 ///////////////////////////////         Controllers         /////////////////////////////////////////////////
 
-jasmine = 0, gio = 1, daniel = 2,                               // controller ports
+nathan = 0, gio = 1, daniel = 2,                               // controller ports
 
 leftDriveAxis = 1, rightDriveAxis = 5,                      // controller axis 
 
@@ -41,31 +41,22 @@ indexMotor = 20,                                                     // indexer 
 
 
 
-                    /////////////           Jasmine Controls              ///////////////
+                    /////////////           Nathan Controls              ///////////////
 
 rotaryForwardButton = 6, rotaryBackwardButton = 8,              // rotary arms buttons 
 
 cascadeDownButton = 7, cascadeUpButton = 5,                     // cascade buttons
 
-IndexerInButton = 5, IndexerOutButton = 7,                      // indexer buttons
-
-shooterButton = 6, shooterRev1 = 12,                            // shooter buttons
-
-aimRobotButton = 14,                                            // aim button
 
 
 
                     ////////////        Gio Controls            //////////////////
 
-rotaryForwardButton2 = 1, rotaryBackwardButton2 = 4,            // rotary arms buttons
+IndexerOutGio = 6, IndexerInGio = 5,                    // indexer buttons
+IndexerInMaxGio = 9,
 
-cascadeDownButton2 = 8, cascadeUpButton2 = 8,                   // cascade buttons
-
-IndexerOut2Button = 6, IndexerIn2Button = 5,                    // indexer buttons
-IndexerInMax2Button = 9,
-
-shooterMax = 10, shooterClose = 7, shooterMid = 8,                 // shooter controls
-shooterFar = 4, shooterRev = 6,                                // shooter controls 
+shooterMax = 10, shooterClose = 7, shooterMid = 8,              // shooter controls
+shooterFar = 4, shooterRev = 6,                                 // shooter controls 
 
 aimRobotButton2 = 7,                                            // aiming button    
 
@@ -74,16 +65,13 @@ aimRobotButton2 = 7,                                            // aiming button
 
                     ////////////        Daniel Controls            //////////////////
 
-rotaryForwardButton3 = 1, rotaryBackwardButton3 = 4,            // rotary arms buttons
+IndexerOutDaniel = 5, IndexerInDaniel = 6,                      // indexer buttons
+IndexerMaxDaniel = 9,
 
-cascadeDownButton3 = 8, cascadeUpButton3 = 8,                   // cascade buttons
+shooterMaxDaniel = 10, shooterFarDaniel = 7, shooterMidDaniel = 8,   // shooter controls
+shooterCloseDaniel = 4, shooterRevDaniel = 6,                       // shooter controls 
 
-IndexerOut3Button = 5, IndexerIn3Button = 6,                    // indexer buttons
-
-shooterButton3 = 8, shooter9_3 = 4, shooter8_3 = 3,             // shooter controls
-shooter7_3 = 2, shooter6_3 = 1, shooterRev3 = 5,                // shooter controls 
-
-aimRobotButton3 = 7;                                            // aiming button  
+aimRobotButtonDaniel = 7;                                           // aiming button  
 
 
 
