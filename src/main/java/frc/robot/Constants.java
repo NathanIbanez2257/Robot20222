@@ -43,9 +43,9 @@ indexMotor = 20,                                                     // indexer 
 
                     /////////////           Nathan Controls              ///////////////
 
-rotaryForwardButton = 6, rotaryBackwardButton = 8,              // rotary arms buttons 
+rotaryForwardButton = 8, rotaryBackwardButton = 6,              // rotary arms buttons 
 
-cascadeDownButton = 7, cascadeUpButton = 5,                     // cascade buttons
+cascadeDownButton = 5, cascadeUpButton = 7,                     // cascade buttons
 
 
 
