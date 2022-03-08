@@ -1,7 +1,6 @@
 
 package frc.robot;
 
-import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Joystick;
 import frc.robot.commands.aimRobotCommand;
 import frc.robot.commands.cascadeCommand;
@@ -55,9 +54,9 @@ public class RobotContainer
   Joystick daniel = new Joystick(Constants.daniel);
 
 
-  /*RunCommand gioMove = new RunCommand(() -> driveSub.move
+  RunCommand gioMove = new RunCommand(() -> driveSub.move
   (Constants.driveSpeed*gio.getRawAxis(1),
-  Constants.driveSpeed*gio.getRawAxis(5)),driveSub);*/
+  Constants.driveSpeed*gio.getRawAxis(5)),driveSub);
 
   
 
@@ -118,7 +117,7 @@ public class RobotContainer
 
                                   /////////////////    Drive Controls      /////////////////////
                                   
-    //driveSub.setDefaultCommand(gioMove);
+    driveSub.setDefaultCommand(gioMove);
     
    
     

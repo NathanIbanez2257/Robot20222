@@ -14,8 +14,16 @@ public class cascade extends SubsystemBase {
 
 
 
-  public void cascadeMove(double speed){
+  public void cascadeMove(double speed)
+  {
+    if(limitSwitch.get())
+    {
+      motor.set(-.3);
+
+    }
+    else{
     motor.set(speed);
+    }
   }  
 
 

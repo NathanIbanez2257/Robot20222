@@ -4,17 +4,12 @@
 
 package frc.robot;
 
-
-import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
-
 import edu.wpi.first.cameraserver.CameraServer;
 import edu.wpi.first.cscore.UsbCamera;
-import edu.wpi.first.cscore.VideoMode.PixelFormat;
-import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
-import frc.robot.commands.cascadeCommand;
+
 
 /**
  * The VM is configured to automatically run this class, and to call the functions corresponding to
@@ -33,6 +28,7 @@ public class Robot extends TimedRobot {
 
     m_robotContainer = new RobotContainer();
     UsbCamera camera = CameraServer.startAutomaticCapture();
+    camera.setResolution(1920, 1080);
     
 
     
@@ -93,15 +89,6 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() 
   {
-
-    DigitalInput limitSwitch  = new DigitalInput(0);
-    WPI_TalonFX motor = new WPI_TalonFX(Constants.cascadeMotor);
-
-      while(limitSwitch.get())
-      {
-        motor.set(-.2);
-      }
-
 
     }
 
