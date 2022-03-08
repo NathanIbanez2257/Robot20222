@@ -1,6 +1,7 @@
 
 package frc.robot;
 
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Joystick;
 import frc.robot.commands.aimRobotCommand;
 import frc.robot.commands.cascadeCommand;
@@ -13,7 +14,9 @@ import frc.robot.subsystems.indexer;
 import frc.robot.subsystems.rotaryArms;
 import frc.robot.subsystems.shooter;
 import edu.wpi.first.wpilibj2.command.Command;
+import edu.wpi.first.wpilibj2.command.ParallelCommandGroup;
 import edu.wpi.first.wpilibj2.command.RunCommand;
+import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 
 public class RobotContainer 
@@ -24,6 +27,7 @@ public class RobotContainer
   private final cascade cascadeSub = new cascade();
   private final indexer indexerSub = new indexer();
   private final rotaryArms rotarySub = new rotaryArms();
+
 
 
   private final shooterCommand shooterMax = new shooterCommand(shooterSub, Constants.shooterSpeed);
@@ -57,7 +61,7 @@ public class RobotContainer
 
   
 
-  RunCommand nathanMove = new RunCommand(() -> driveSub.move
+  /*RunCommand nathanMove = new RunCommand(() -> driveSub.move
   (Constants.driveSpeed*nathan.getRawAxis(Constants.leftDriveAxis),
   Constants.driveSpeed*nathan.getRawAxis(Constants.rightDriveAxis)),driveSub);
   
@@ -69,7 +73,7 @@ public class RobotContainer
   public RobotContainer() 
   {
 
-
+  
     //////////////////////////////////////////////    Jasmine Controls       /////////////////////////////////////////////////
 
 
@@ -77,7 +81,7 @@ public class RobotContainer
 
                           ////////////    Drive Controls      ///////////////
 
-    driveSub.setDefaultCommand(nathanMove);
+    //driveSub.setDefaultCommand(nathanMove);
 
 
 
@@ -232,6 +236,7 @@ public class RobotContainer
 
  
   public Command getAutonomousCommand() {
+
     return null;
   }
 }
