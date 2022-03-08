@@ -54,11 +54,11 @@ public class RobotContainer
   Joystick daniel = new Joystick(Constants.daniel);
 
 
-  RunCommand gioMove = new RunCommand(() -> driveSub.move
+ /* RunCommand gioMove = new RunCommand(() -> driveSub.move
   (Constants.driveSpeed*gio.getRawAxis(1),
   Constants.driveSpeed*gio.getRawAxis(5)),driveSub);
 
-  
+  */
 
   /*RunCommand nathanMove = new RunCommand(() -> driveSub.move
   (Constants.driveSpeed*nathan.getRawAxis(Constants.leftDriveAxis),
@@ -117,7 +117,7 @@ public class RobotContainer
 
                                   /////////////////    Drive Controls      /////////////////////
                                   
-    driveSub.setDefaultCommand(gioMove);
+   // driveSub.setDefaultCommand(gioMove);
     
    
     
