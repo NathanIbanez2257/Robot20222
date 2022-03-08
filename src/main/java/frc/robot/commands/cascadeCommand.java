@@ -23,12 +23,16 @@ public class cascadeCommand extends CommandBase {
   @Override
   public void execute() {
     cascadeSub.cascadeMove(speed);
+    cascadeSub.cascadeLimit(false);
+    
     
   }
 
   @Override
   public void end(boolean interrupted) {
     cascadeSub.cascadeMove(0);
+    cascadeSub.cascadeLimit(true);
+
   }
 
   @Override
