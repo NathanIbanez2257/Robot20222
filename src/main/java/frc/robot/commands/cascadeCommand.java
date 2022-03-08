@@ -6,6 +6,7 @@ import frc.robot.subsystems.cascade;
 public class cascadeCommand extends CommandBase {
   cascade cascadeSub;
   double speed;
+  
 
   public cascadeCommand(cascade cascade, double cascadeSpeed) {
     cascadeSub = cascade;
@@ -13,6 +14,8 @@ public class cascadeCommand extends CommandBase {
     addRequirements(cascadeSub);
     
   }
+
+
 
   @Override
   public void initialize() {}
